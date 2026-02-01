@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { getToken, logout } from "../utils/auth";
 
-const API = "http://localhost:5000";
+const API = "https://certifynow-siyv.onrender.com";
 
 export default function Dashboard() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
