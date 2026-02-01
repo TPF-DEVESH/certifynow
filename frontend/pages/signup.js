@@ -1,4 +1,4 @@
-const API = "http://localhost:5000";
+const API = "https://certifynow-siyv.onrender.com";
 
 export default function Signup() {
   const submit = async () => {
