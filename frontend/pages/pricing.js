@@ -1,6 +1,6 @@
 import { getToken } from "../utils/auth";
 
-const API = "http://localhost:5000";
+const API = "https://certifynow-siyv.onrender.com";
 
 export default function Pricing() {
   const buy = async (plan) => {
