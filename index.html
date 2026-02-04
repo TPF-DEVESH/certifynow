@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CertiFlow | Bulk Certificate Generator & Email Automation</title>
+    
+    <!-- Environment Config Injection (Crucial for Production VPS) -->
+    <script src="/config.js"></script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Payment & Auth SDKs -->
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    
     <style>
         body { font-family: 'Inter', sans-serif; }
         .stripe-button-el { display: none !important; }
@@ -22,6 +28,21 @@
         }
         .animate-slideUp { animation: slideUp 0.4s ease-out forwards; }
         .google-btn-container iframe { width: 100% !important; margin: 0 auto !important; }
+        
+        /* Custom Scrollbar for a more premium feel */
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #e2e8f0;
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #cbd5e1;
+        }
     </style>
 <script type="importmap">
 {
@@ -38,6 +59,8 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
     <div id="root"></div>
+    <!-- Main Application Entry -->
+    <script type="module" src="index.tsx"></script>
 <script type="module" src="/index.tsx"></script>
 </body>
 </html>
