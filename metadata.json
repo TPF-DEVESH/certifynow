@@ -1,0 +1,8 @@
+{
+  "name": "CertiFlow - SaaS Certificate Automation",
+  "description": "A high-performance SaaS platform for bulk certificate generation and automated email distribution. Features AI copy generation, PDF/Image processing, CSV parsing, and custom SMTP integration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
