@@ -15,10 +15,10 @@ const Navbar: React.FC<NavbarProps> = ({ user, onLogout, onNavigate }) => {
         <div className="flex justify-between h-20 items-center">
           <div className="flex items-center cursor-pointer group" onClick={() => onNavigate('home')}>
             <div className="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center text-white mr-3 shadow-lg shadow-indigo-100 group-hover:scale-110 transition-transform">
-              <i className="fas fa-certificate text-2xl"></i>
+              <i className="fas fa-file-signature text-2xl"></i>
             </div>
             <span className="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 tracking-tighter">
-              CertiFlow
+              CraftedDocs
             </span>
           </div>
 

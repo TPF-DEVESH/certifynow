@@ -1,7 +1,7 @@
 
 import { UserPlan } from './types';
 
-export const APP_NAME = "CertiFlow";
+export const APP_NAME = "CraftedDocs";
 
 export const LIMITS = {
   [UserPlan.FREE]: 50,
@@ -14,7 +14,7 @@ export const PRICING_PLANS = [
     name: "Free",
     price: "₹0",
     limit: 50,
-    features: ["50 daily emails", "Platform SMTP", "1 Project"],
+    features: ["50 daily documents", "Standard Delivery", "1 Active Flow"],
     plan: UserPlan.FREE,
     cta: "Start Free"
   },
@@ -22,7 +22,7 @@ export const PRICING_PLANS = [
     name: "15 Days Pro",
     price: "₹400",
     limit: 2000,
-    features: ["2,000 daily emails", "Custom SMTP", "Unlimited Projects"],
+    features: ["2,000 daily documents", "Custom SMTP Relay", "Unlimited Flows"],
     plan: UserPlan.PAID_15,
     cta: "Upgrade Now"
   },
@@ -30,7 +30,7 @@ export const PRICING_PLANS = [
     name: "Monthly Pro",
     price: "₹650",
     limit: 5000,
-    features: ["5,000 daily emails", "Custom SMTP", "Unlimited Projects"],
+    features: ["5,000 daily documents", "Enterprise Relay", "Priority Support"],
     plan: UserPlan.PAID_MONTHLY,
     cta: "Select Plan"
   }
